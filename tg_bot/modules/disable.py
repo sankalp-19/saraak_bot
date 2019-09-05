@@ -169,4 +169,4 @@ if is_module_loaded(FILENAME):
 else:
     DisableAbleCommandHandler = CommandHandler
     DisableAbleRegexHandler = RegexHandler
-© 2019 GitHub, Inc.
+© 2019 GitHub, I
