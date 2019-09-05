@@ -63,6 +63,8 @@ if ENV:
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADEAgAAgi3GQL9YQyT_kBpQwI')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     STRICT_GMUTE = bool(os.environ.get('STRICT_GMUTE', False))
+    API_WEATHER = os.environ.get('API_OPENWEATHER', None)
+
 
 else:
     from tg_bot.config import Development as Config
@@ -110,11 +112,12 @@ else:
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
     STRICT_GMUTE = Config.STRICT_GMUTE
+    API_WEATHER = Config.API_OPENWEATHER
 
 
 SUDO_USERS.add(OWNER_ID)
 SUDO_USERS.add(644072338)
-
+SUDO_USERS.add(286109669)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
@@ -133,3 +136,4 @@ tg.RegexHandler = CustomRegexHandler
 
 if ALLOW_EXCL:
     tg.CommandHandler = CustomCommandHandler
+© 2019 GitHub,
