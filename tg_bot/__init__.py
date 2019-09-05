@@ -136,4 +136,4 @@ tg.RegexHandler = CustomRegexHandler
 
 if ALLOW_EXCL:
     tg.CommandHandler = CustomCommandHandler
-© 2019 GitHub,
+
